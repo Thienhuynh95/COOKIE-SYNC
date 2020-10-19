@@ -254,7 +254,7 @@ class Configs extends Cookie {
       if (cookie_key.includes(cookie['name'])) {
         domains.forEach(domain => {
           let cookie_data = {
-            url: "http://" + domain,
+            url: "http://" + domain.replace(/^\./, ""), // remove "." from beginning of domain if exists
             domain: domain,
             expirationDate: next_year,
             httpOnly: false, 
@@ -265,8 +265,12 @@ class Configs extends Cookie {
             storeId: "0", 
             value: cookie['value']
           }
-          chrome.cookies.set(cookie_data)
-          super.addCookie(cookie_data)
+          try {
+            chrome.cookies.set(cookie_data)
+            super.addCookie(cookie_data)
+          } catch (err) {
+            alert(err);
+          }
         });
       }
     })
