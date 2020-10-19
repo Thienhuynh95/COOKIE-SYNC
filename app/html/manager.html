@@ -1,0 +1,77 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script type="module" src="/js/manager.js"></script>
+</head>
+<body>
+  <div class="container mb-15">
+    <div class="text-center mb-15">
+      <h3>COPY COOKIE</h3>
+      <p>Copy all matching cookies in <b>"Cookie Key"</b> list below from <b>"www.bonadmin.com"</b> and paste it to domain listed in <b>"Domain"</b></p>
+      <button class="btn btn-primary" id="update-btn">UPDATE</button>
+    </div>
+    <div class="cookie text-center">
+      <div class="input-block cookie-input mr-15 text-left">
+        Cookie to copy: 
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <input id="cookie-to-copy" class="form-control" type="text" />
+          </div>
+          <button class="input-group-text" id="add-cookie">ADD</button>
+        </div>
+      </div>
+      <div class="input-block domain-input text-left">
+        Domain to sync: 
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <input id="domain-to-set" class="form-control" type="text" />
+          </div>
+          <button class="input-group-text" id="add-domain">ADD</button>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="cookie-block mb-15">
+        <div class="cookie-list">
+          <table>
+            <thead>
+              <tr>
+                <th>Cookie Key</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="left-sidebar">
+        <div class="domain-list">
+          <table>
+            <thead>
+              <tr>
+                <th>Domain</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="main-list">
+        <table>
+          <thead>
+            <tr>
+              <th width="100px">Key</th>
+              <th>Value</th>
+              <th width="60px"></th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

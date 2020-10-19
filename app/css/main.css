@@ -1,0 +1,78 @@
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table .text {
+  word-break: break-word;
+}
+
+table td {
+  border: 1px solid black;
+  padding-left: 5px;
+}
+
+table td.cookie_count {
+  text-align: right;
+}
+
+.main-content {
+  font-size: 0px;
+}
+
+.main-content .left-sidebar,
+.main-content .main-list {
+  display: inline-block;
+  padding: 0 15px;
+  vertical-align: top;
+}
+
+.main-content .left-sidebar {
+  width: 250px;
+}
+
+.main-content .cookie-block {
+  padding: 0 15px;
+}
+
+.main-content .main-list {
+  width: calc(100% - 250px);
+}
+
+.main-content .domain-list tbody tr:hover {
+  background: rgba(153, 153, 153, 0.2);
+}
+
+.main-content .domain-list tbody tr.selected {
+  background: rgba(153, 153, 153, 0.8);
+}
+
+.main-content .domain-list tbody tr.selected td.item-name::before {
+  content: "=> ";
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.main-content .main-list table,
+.main-content .domain-list table {
+  width: 100%;
+}
+
+.input-block {
+  display: inline-block;
+}
+
+.input-block .input-group .input-group-prepend input {
+  border-radius: 3px 0 0 3px;
+}
+
+.input-block .input-group .input-group-text {
+  border-radius: 0 3px 3px 0;
+}
